@@ -19,12 +19,9 @@ def driver():
     categorized_sequences[0] = [] # dna strands
     categorized_sequences[1] = [] # rna strands
 
-
     for sequence in all_sequences:
         category = categorize_strand(sequence)
         categorized_sequences[category].append(sequence)
-        # categorized_sequences[category] = sequence
-
 
     print("-------------------------")
     print("Encoding sequences for storage...")
